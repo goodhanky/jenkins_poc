@@ -21,6 +21,7 @@ job('NodeJS Docker example') {
             tag('${GIT_REVISION,length=7}')
             registryCredentials('dockerhub')
             forcePull(false)
+            forceTag(false)
             createFingerprints(false)
             skipDecorate()
         }
