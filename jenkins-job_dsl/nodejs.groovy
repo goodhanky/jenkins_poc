@@ -12,7 +12,7 @@ job('NodeJS example') {
     }
 
     wrappers {
-        nodejs('nodejs')
+        nodejs('nodejs_7.10.0')
     }
 
     steps {
