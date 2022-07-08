@@ -19,7 +19,7 @@ job('NodeJS Docker example') {
         dockerBuildAndPublish {
             repositoryName('goodhanky/nodejsapp')
             tag('${BUILD_TIMESTAMP}-${GIT_REVISION,length=7}')
-            registryCredentials('docker-hub')
+            registryCredentials('dockerhub')
             forcePull(false)
             createFingerprints(false)
             skipDecorate()
